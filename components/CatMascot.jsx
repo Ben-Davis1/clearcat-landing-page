@@ -1,12 +1,15 @@
 import React from 'react';
 
-const CatMascot = ({ className }) => {
+const CatMascot = ({ className, alt, role, ...props }) => {
   return (
     <svg
       viewBox="0 0 200 200"
       fill="none"
       className={className}
       xmlns="http://www.w3.org/2000/svg"
+      role={role || "img"}
+      aria-label={alt || "ClearCat mascot"}
+      {...props}
     >
       {/* Cat ears */}
       <path

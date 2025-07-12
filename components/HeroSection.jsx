@@ -31,7 +31,12 @@ const HeroSection = () => {
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-8">
           <div className="w-48 h-48 md:w-64 md:h-64">
-            <CatMascot className="w-full h-full text-primary animate-bounce-slow" />
+            <CatMascot 
+              className="w-full h-full text-primary animate-bounce-slow" 
+              alt="ClearCat mascot - friendly AI cat character for expense tracking"
+              role="img"
+              aria-label="ClearCat mascot illustration"
+            />
           </div>
           <WaitlistForm />
         </div>
